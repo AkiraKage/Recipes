@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_margin="12dp"
+    tools:context=".AddRecipeActivity">
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi nuova ricetta"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/titleinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Inserire il nome del piatto"
+        android:padding="10dp"
+        android:layout_below="@id/titletext"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/selectImageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premi per selezionare un'immagine"
+        android:textSize="14sp"
+        android:layout_below="@id/titleinput"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/selectImageText"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/ingredientinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Inserire gli ingredienti"
+        android:padding="10dp"
+        android:layout_below="@id/imageButton"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:lines="3"/>
+
+    <EditText
+        android:id="@+id/recipeinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Inserire il procedimento"
+        android:padding="10dp"
+        android:layout_below="@id/ingredientinput"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:lines="8"/>
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salva Ricetta"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
